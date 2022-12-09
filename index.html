@@ -26,12 +26,12 @@
         const loadData = async () => {
             // get (READ)
             const res = await axios.get(MY_SERVER) //get data from server
+            console.log(res) //display date  in console
             display.innerHTML = res.data.map(stu => `
             <div><h2>
             <button onclick='updStudent(${stu.id})'>upddd</button>
             <button onclick='delStudent(${stu.id})'>del - ${stu.id}</button>
             name: ${stu.name} , city: ${stu.city} ,id:${stu.id}</h2></div><hr>`).join("") //build display
-            console.log(res) //display date  in console
         }
 
         loadData()
