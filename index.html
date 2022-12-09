@@ -19,7 +19,7 @@
     <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
     <script>
         // const MY_SERVER ="http://127.0.0.1:5000/students" //flask
-        const MY_SERVER ="https://studentsback.onrender.com" //json place holder
+        const MY_SERVER ="https://studentsback.onrender.com/students" //json place holder
         // const MY_SERVER = "http://localhost:3000/students/" // fake json server
         // const MY_SERVER ="http://localhost:5000/students" //my flask python
 
@@ -34,7 +34,7 @@
             name: ${stu.name} , city: ${stu.city} ,id:${stu.id}</h2></div><hr>`).join("") //build display
         }
 
-        loadData()
+        loadData()`
 
         // post (Create)
         const addData =async () => {
